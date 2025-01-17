@@ -1,3 +1,11 @@
+
+/* Import fonts */
+.marcellus-regular {
+    font-family: "Marcellus", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -9,39 +17,17 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.marcellus-regular {
-    font-family: "Marcellus", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  .image {
+/* Title Section on left of page */
+.title_area {
     border: 3px solid yellow;
     width: 600px;
     height: auto;
     position: relative;
     padding: 30px;
     margin-top: 60px;
-  }
-
-#backgroundImg {
-    width: 600px;
-    position: relative;
-    top: -30px;
-    z-index: 0;
 }
 
-#leftBanner {
-    width: 100px;
-}
-
-h1 {
-    font-family: "Marcellus", serif;
-    font-size: 46px;
-
-}
-
-.hero {
+.title_area_hero {
     --heroColor: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
@@ -49,14 +35,35 @@ h1 {
     z-index: +1;
     background-color: var(--heroColor);
     color: white;
-    padding: 30px 0;
+    padding: 10px 0;
     position: absolute;
     top: 200px;
     width: 600px; 
 }
 
-#photoCredit {
+#title_area_leftBanner {
+    width: 100px;
+    padding-right: 10px;
+}
+
+h1.title_area_title {
+    font-family: "Marcellus", serif;
+    font-size: 46px;
+}
+
+#title_area_backgroundImg {
+    width: 600px;
+    position: relative;
+    top: -20px;
+    z-index: 0;
+}
+
+.title_area_photoCredit {
     z-index: +1;
     position: absolute;
     bottom: 75px; left: 200px;
+}
+
+p > a {
+    color: white;
 }
