@@ -78,6 +78,7 @@ p > a {
 
 .form_area_text {
     margin-top: 100px;
+    max-width: 65ch;
 }
 div.form_area_text > h2:last-child {
     margin-top: 40px;
@@ -111,7 +112,7 @@ label[for="form"] {
 
 .form_row_item label {
     font-size: 14px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     margin-bottom: 3px;
 
 }
@@ -131,9 +132,10 @@ label[for="form"] {
     initial-value: #556B2F;
 }
 
-.form_row_item input:focus {
-    border: 1px solid var(--button_color);
+input:focus {
+    border: 1px solid blue;
     border-radius: 3px;
+    box-shadow: -1px 1px 1px blue;
 }
 
 .form_row_item input:user-invalid {
@@ -142,6 +144,10 @@ label[for="form"] {
   box-shadow: none; /* Remove default red glow in Firefox */
 }
 
+.password_info {
+    font-size: 14px;
+    max-width: 28ch;
+}
 
 button#signUp {
     margin-top: 90px;
