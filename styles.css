@@ -23,7 +23,7 @@ body {
     width: 600px;
     height: auto;
     position: relative;
-    padding: 30px;
+    padding: 10px;
     margin-top: 60px;
 }
 
@@ -54,7 +54,6 @@ h1.title_area_title {
 #title_area_backgroundImg {
     width: 600px;
     position: relative;
-    top: -20px;
     z-index: 0;
 }
 
@@ -67,3 +66,29 @@ h1.title_area_title {
 p > a {
     color: white;
 }
+
+/* Form Section */
+.form_area {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    padding-top: 10px;
+    padding-left: 30px;
+    max-width: 980px;
+}
+
+.form_area_text {
+    margin-top: 100px;
+}
+div.form_area_text > h2:last-child {
+    margin-top: 30px;
+}
+
+form#signUp {
+    margin-top: 30px;
+}
+
+label[for="form"] {
+    font-size: 30px;
+}
+
