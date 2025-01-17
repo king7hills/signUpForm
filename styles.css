@@ -19,7 +19,6 @@ body {
 
 /* Title Section on left of page */
 .title_area {
-    border: 3px solid yellow;
     width: 600px;
     height: auto;
     position: relative;
@@ -71,24 +70,92 @@ p > a {
 .form_area {
     display: flex;
     flex-direction: column;
-    margin-top: 60px;
+    margin-top: 90px;
     padding-top: 10px;
     padding-left: 30px;
-    max-width: 980px;
+    max-width: 880px;
 }
 
 .form_area_text {
     margin-top: 100px;
 }
 div.form_area_text > h2:last-child {
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 form#signUp {
-    margin-top: 30px;
+    margin-top: 40px;
+    max-width: 600px;
 }
 
 label[for="form"] {
-    font-size: 30px;
+    font-size: 26px;
 }
 
+.form {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.signUp_names {
+    margin-top: 15px;
+}
+
+.form_row_item {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+
+.form_row_item label {
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 3px;
+
+}
+
+.form_row_item input {
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    padding: 7px;
+    font-size: 16px;
+    box-shadow: -2px 2px 2px silver;
+  }
+
+/* creates new variable color for button and log in link */
+@property --button_color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #556B2F;
+}
+
+.form_row_item input:focus {
+    border: 1px solid var(--button_color);
+    border-radius: 3px;
+}
+
+.form_row_item input:user-invalid {
+  border: 1px solid #D55C5F;
+  color: #D55C5F;
+  box-shadow: none; /* Remove default red glow in Firefox */
+}
+
+
+button#signUp {
+    margin-top: 90px;
+    margin-bottom: 30px;
+    padding: 15px 70px;
+    border-radius: 8px;
+    background-color: var(--button_color);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+div.form_area_signIn {
+    font-size: 18px;
+}
+div.form_area_signIn > a {
+    color: var(--button_color);
+}
